@@ -1,37 +1,31 @@
-// JavaScript Practice: Type Coercion & Explicit Conversion
-// ===========================================================
+// 1st problem
+let price="500"
+let quantity="3"
+let total_price=Number(price);
+let Quantity=Number(quantity);
+let result=total_price*Quantity
+console.log(result);
 
-// Problem 1 — UI Price and Quantity
-// A product page returns the following values as strings:
-// let price = "500";
-// let quantity = "3";
-// Calculate the total price.
+// 2nd Problem
+let total="1000";
+let tax="200";
+let total_rate=Number(total);
+let total_tax=Number(tax);
+let total_result=total_rate+total_tax;
+console.log(total_result);
 
-// Expected Output:
-// 1500
+// 3rd Problem
+let actual = "100";
+let expected = 20;
+// What will be the output of:
+// console.log(actual + expected); -- (10020)
 
-// Problem 2 — UI Price + Tax
-// The UI returns:
-// let price = "1000";
-// let tax = "200";
-// Calculate the final price.
-
-// Expected Output:
-// 1200
-
-// Problem 3 — Understand + Coercion
+// 4th Problem
 // Consider:
 // let actual = "100";
 // let expected = 20;
 // What will be the output of:
-// console.log(actual + expected); -- 10020
-
-// Problem 4 — Understand - Coercion
-// Consider:
-// let actual = "100";
-// let expected = 20;
-// What will be the output of:
-// console.log(actual - expected); -- 80
+// console.log(actual - expected); -- (80)
 
 // Problem 5 — UI Value and Assertion
 // A UI displays:
@@ -40,71 +34,45 @@
 // let actualPrice = "100";
 // let expectedPrice = 100;
 // Check the result of:
-// console.log(actualPrice == expectedPrice); -- true
-// console.log(actualPrice === expectedPrice); -- false
+// console.log(actualPrice == expectedPrice); -- (true)
+// console.log(actualPrice === expectedPrice); -- (false)
 
-// Problem 6 — Fix the Assertion
-// The following automation code is failing:
-// let actualPrice = "500";
-// let expectedPrice = 500;
-// console.log(actualPrice === expectedPrice);
+// 6th Problem
+let actualprice="500";
+let expectedprice=500;
+// console.log(actualprice === expectedprice);
+let actual_price=Number(actualprice);
+console.log(actual_price===expectedprice);
 
-// Modify the code so that the assertion gives:
-// true
+//7th Problem
+let timeout="30000";
+let timeout_result=Number(timeout);
+console.log(timeout_result);
+console.log(typeof(timeout_result));
 
-// Problem 7 — Environment Variable
-// An automation framework reads the timeout from an environment variable:
-// let timeout = "30000";
-// Convert it into a number and print:
-// The value
-// Its data type
+// 8th Problem
+let orderId=12345;
+let order=String(orderId);
+console.log(order);
+console.log("ORDER-"+(order));
 
-// Expected Output:
-// 30000
-// number
+//9th Problem
 
-// Problem 8 — Order ID
-// An API returns:
-// let orderId = 12345;
-// Convert the order ID into a string and create:
-// ORDER-12345
+let status="true";
+let original_status=Boolean("status");
+console.log(original_status);
 
-// Problem 9 — Boolean API Value
-// An API returns:
-// let status = "true";
-// Convert this value into an actual Boolean.
+// 10th Problem
+let number="5";
+let total_number=Number(number);
+console.log(total_number);
 
-// Expected Output:
-// true
-// boolean
+// 11th Problem 
+let amount="799",no_of_toys="2",discount="100";
+let total_amount=Number(amount);
+let toys=Number(no_of_toys);
+let total_discount=Number(discount);
+let output=((total_amount*toys)-total_discount);
+console.log(output);
+console.log(typeof(output));
 
-// Problem 10 — Input Field Value
-// A Playwright test retrieves a quantity from an input field:
-// let quantity = "5";
-// The expected quantity is:
-// let expectedQuantity = 5;
-
-// Problem 11 — Calculate Cart Total
-// An e-commerce application provides:
-// let price = "799";
-// let quantity = "2";
-// let discount = "100";
-// Calculate:
-// (price × quantity) - discount
-
-// Expected Output:
-// 1498
-
-let price="500"
-let quantity="3"
-let total_price=Number(price);
-let Quantity=Number(quantity);
-let result=total_price*Quantity
-console.log(result);
-
-let total="1000";
-let tax="200";
-let total_amount=Number(total);
-let total_tax=Number(tax);
-let total_result=total_amount+total_tax;
-console.log(total_result);
