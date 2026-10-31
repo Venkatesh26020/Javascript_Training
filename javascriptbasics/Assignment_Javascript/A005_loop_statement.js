@@ -1,12 +1,12 @@
 // Check whether number is prime
 
-// let num=21;
-// for(let i=2;i<=Math.floor(Math.sqrt(num));i++){
-//     if(num%i===0){
-//         console.log(`${num} is not prime`);
-//         break;
-//     }
-// }
+let num=21;
+for(let i=2;i<=Math.floor(Math.sqrt(num));i++){
+    if(num%i===0){
+        console.log(`${num} is not prime`);
+        break;
+    }
+}
 
 // even numbers between 1 to 50
 
