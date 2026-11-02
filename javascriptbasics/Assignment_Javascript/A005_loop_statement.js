@@ -1,11 +1,17 @@
 // Check whether number is prime
 
-let num=21;
+let num=231;
+let flag=true;
 for(let i=2;i<=Math.floor(Math.sqrt(num));i++){
     if(num%i===0){
-        console.log(`${num} is not prime`);
-        break;
+        flag=false
     }
+}
+if(flag===true){
+    console.log(`${num} is prime`)
+}
+else{
+    console.log(`${num} is not prime`)
 }
 
 // even numbers between 1 to 50
@@ -24,6 +30,7 @@ for(let i=1;i<=10;i++){
     console.log(multiply*i);
 }
 
+// Factorial of a Number
 let fact=1;
 let a=10;
 for(let i=1;i<=a;i++){
@@ -31,6 +38,7 @@ for(let i=1;i<=a;i++){
 }
 console.log(`The factorial of ${a} is:` +fact);
 
+// Print until 10
 let number=20;
 for(let i=1;i<=number;i++)
 {
@@ -65,4 +73,23 @@ for(let i=1;i<=c;i++){
     else{
         console.log(i)
     }
+}
+
+// star pattern containing 5 rows and 5 columns
+
+for(let r=1;r<=5;r++){
+    let row="";
+    for(let c=1;c<=5;c++){
+        row=row + " *";
+    }
+    console.log(row);
+}
+// star pattern in decreasing order
+
+for(let r=1;r<=5;r++){
+    let row="";
+    for(let c=r;c<=5;c++){
+        row=row + " *"
+    }
+    console.log(row)
 }
